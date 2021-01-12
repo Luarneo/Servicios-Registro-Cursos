@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="cbde09fc-aa7b-4079-9db9-43c98c5f657d" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:53722/ServiciosGrupos.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ServiciosGrupos3.xsd" MetadataType="Schema" ID="ccb62f82-f00b-463a-a0d2-0668aea79380" SourceId="1" SourceUrl="http://localhost:53722/ServiciosGrupos.svc?xsd=xsd3" />
+    <MetadataFile FileName="ServiciosGrupos.xsd" MetadataType="Schema" ID="98e3a326-4145-46dc-8949-a0e44378ad4a" SourceId="1" SourceUrl="http://localhost:53722/ServiciosGrupos.svc?xsd=xsd1" />
+    <MetadataFile FileName="ServiciosGrupos2.xsd" MetadataType="Schema" ID="f7a505a7-5269-4f2d-9c9f-df3bf2b54bc7" SourceId="1" SourceUrl="http://localhost:53722/ServiciosGrupos.svc?xsd=xsd2" />
+    <MetadataFile FileName="ServiciosGrupos.disco" MetadataType="Disco" ID="aa864f68-353c-44a6-9ccc-729382bfc3de" SourceId="1" SourceUrl="http://localhost:53722/ServiciosGrupos.svc?disco" />
+    <MetadataFile FileName="ServiciosGrupos.wsdl" MetadataType="Wsdl" ID="f332ddc7-633b-43d6-a24f-4b0db2c1e990" SourceId="1" SourceUrl="http://localhost:53722/ServiciosGrupos.svc?wsdl" />
+    <MetadataFile FileName="ServiciosGrupos1.xsd" MetadataType="Schema" ID="cb0f36e6-e3d7-4127-b878-da2b20513d40" SourceId="1" SourceUrl="http://localhost:53722/ServiciosGrupos.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

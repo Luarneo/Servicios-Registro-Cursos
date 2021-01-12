@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/ServiciosFOP.Models" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/ServiciosFOP.Models" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfGrupo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Grupo" nillable="true" type="tns:Grupo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfGrupo" nillable="true" type="tns:ArrayOfGrupo" />
+  <xs:complexType name="Grupo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Campana" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Estatus" type="xs:boolean" />
+      <xs:element minOccurs="0" name="FinOpc" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FinTeoria" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="IdCampana" type="xs:int" />
+      <xs:element minOccurs="0" name="IdGrupo" type="xs:int" />
+      <xs:element minOccurs="0" name="IdInstructor" type="xs:int" />
+      <xs:element minOccurs="0" name="IdTurno" type="xs:int" />
+      <xs:element minOccurs="0" name="InicioOpc" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="InicioTeoria" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Instructor" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PNI" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Turno" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Grupo" nillable="true" type="tns:Grupo" />
+  <xs:complexType name="ArrayOfAspirante">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Aspirante" nillable="true" type="tns:Aspirante" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfAspirante" nillable="true" type="tns:ArrayOfAspirante" />
+  <xs:complexType name="Aspirante">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ApellidoMaterno" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ApellidoPaterno" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Estatus" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IdAspirante" type="xs:int" />
+      <xs:element minOccurs="0" name="Nombre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NumeroEmpleado" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Aspirante" nillable="true" type="tns:Aspirante" />
+</xs:schema>

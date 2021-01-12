@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29519.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiciosFOP", "ServiciosFOP\ServiciosFOP.csproj", "{1F175ECF-9B17-4400-98A1-34353A56D072}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PruebasSistemaFOP", "PruebasSistemaFOP\PruebasSistemaFOP.csproj", "{D72931B2-4D7B-447A-B6BA-41F88BD78FF9}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1F175ECF-9B17-4400-98A1-34353A56D072} = {1F175ECF-9B17-4400-98A1-34353A56D072}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1F175ECF-9B17-4400-98A1-34353A56D072}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F175ECF-9B17-4400-98A1-34353A56D072}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F175ECF-9B17-4400-98A1-34353A56D072}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F175ECF-9B17-4400-98A1-34353A56D072}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D72931B2-4D7B-447A-B6BA-41F88BD78FF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D72931B2-4D7B-447A-B6BA-41F88BD78FF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D72931B2-4D7B-447A-B6BA-41F88BD78FF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D72931B2-4D7B-447A-B6BA-41F88BD78FF9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B5AC3CA9-89E7-4EE2-AE28-B1C91AE2F298}
+	EndGlobalSection
+EndGlobal

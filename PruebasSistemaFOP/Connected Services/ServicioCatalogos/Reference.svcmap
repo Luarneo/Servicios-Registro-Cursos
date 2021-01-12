@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="90b326a5-6506-41f7-8467-a216a91a434c" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:53722/ServicioCatalogos.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ServicioCatalogos.xsd" MetadataType="Schema" ID="cc9b6f27-b4f9-43c8-ab50-337ec8c137d6" SourceId="1" SourceUrl="http://localhost:53722/ServicioCatalogos.svc?xsd=xsd2" />
+    <MetadataFile FileName="ServicioCatalogos1.xsd" MetadataType="Schema" ID="4ef7dc0c-fcd4-4704-802c-c499de22dd92" SourceId="1" SourceUrl="http://localhost:53722/ServicioCatalogos.svc?xsd=xsd3" />
+    <MetadataFile FileName="ServicioCatalogos.disco" MetadataType="Disco" ID="cc216345-788f-4373-84a7-56e19ac22c78" SourceId="1" SourceUrl="http://localhost:53722/ServicioCatalogos.svc?disco" />
+    <MetadataFile FileName="Service1.wsdl" MetadataType="Wsdl" ID="d1cd34cd-80c6-4239-a3a8-ef722fa69fe5" SourceId="1" SourceUrl="http://localhost:53722/ServicioCatalogos.svc?wsdl" />
+    <MetadataFile FileName="ServicioCatalogos2.xsd" MetadataType="Schema" ID="106cd67b-954f-4a65-91ba-9a7900964b77" SourceId="1" SourceUrl="http://localhost:53722/ServicioCatalogos.svc?xsd=xsd0" />
+    <MetadataFile FileName="ServicioCatalogos3.xsd" MetadataType="Schema" ID="b9ac457f-e9dc-4b67-8cea-d8dbbd63c275" SourceId="1" SourceUrl="http://localhost:53722/ServicioCatalogos.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

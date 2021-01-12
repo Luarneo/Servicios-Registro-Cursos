@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ServiciosGrupos" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:53722/ServiciosGrupos.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:53722/ServiciosGrupos.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:53722/ServiciosGrupos.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/ServiciosFOP.Models" />
+      <xsd:import schemaLocation="http://localhost:53722/ServiciosGrupos.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/System.Collections.Generic" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IServiciosGrupos_ListarGruposActivos_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListarGruposActivos" />
+  </wsdl:message>
+  <wsdl:message name="IServiciosGrupos_ListarGruposActivos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListarGruposActivosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiciosGrupos_GuardarGrupo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GuardarGrupo" />
+  </wsdl:message>
+  <wsdl:message name="IServiciosGrupos_GuardarGrupo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GuardarGrupoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiciosGrupos_ObtenerGrupoPorId_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerGrupoPorId" />
+  </wsdl:message>
+  <wsdl:message name="IServiciosGrupos_ObtenerGrupoPorId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerGrupoPorIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiciosGrupos_ActualizarGrupo_InputMessage">
+    <wsdl:part name="parameters" element="tns:ActualizarGrupo" />
+  </wsdl:message>
+  <wsdl:message name="IServiciosGrupos_ActualizarGrupo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ActualizarGrupoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiciosGrupos_ObtenerAspirantesGrupo_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerAspirantesGrupo" />
+  </wsdl:message>
+  <wsdl:message name="IServiciosGrupos_ObtenerAspirantesGrupo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerAspirantesGrupoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiciosGrupos_AsignarAspiranteGrupo_InputMessage">
+    <wsdl:part name="parameters" element="tns:AsignarAspiranteGrupo" />
+  </wsdl:message>
+  <wsdl:message name="IServiciosGrupos_AsignarAspiranteGrupo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AsignarAspiranteGrupoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiciosGrupos_RemoverAspiranteGrupo_InputMessage">
+    <wsdl:part name="parameters" element="tns:RemoverAspiranteGrupo" />
+  </wsdl:message>
+  <wsdl:message name="IServiciosGrupos_RemoverAspiranteGrupo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RemoverAspiranteGrupoResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IServiciosGrupos">
+    <wsdl:operation name="ListarGruposActivos">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiciosGrupos/ListarGruposActivos" message="tns:IServiciosGrupos_ListarGruposActivos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiciosGrupos/ListarGruposActivosResponse" message="tns:IServiciosGrupos_ListarGruposActivos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GuardarGrupo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiciosGrupos/GuardarGrupo" message="tns:IServiciosGrupos_GuardarGrupo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiciosGrupos/GuardarGrupoResponse" message="tns:IServiciosGrupos_GuardarGrupo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerGrupoPorId">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiciosGrupos/ObtenerGrupoPorId" message="tns:IServiciosGrupos_ObtenerGrupoPorId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiciosGrupos/ObtenerGrupoPorIdResponse" message="tns:IServiciosGrupos_ObtenerGrupoPorId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ActualizarGrupo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiciosGrupos/ActualizarGrupo" message="tns:IServiciosGrupos_ActualizarGrupo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiciosGrupos/ActualizarGrupoResponse" message="tns:IServiciosGrupos_ActualizarGrupo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerAspirantesGrupo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiciosGrupos/ObtenerAspirantesGrupo" message="tns:IServiciosGrupos_ObtenerAspirantesGrupo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiciosGrupos/ObtenerAspirantesGrupoResponse" message="tns:IServiciosGrupos_ObtenerAspirantesGrupo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AsignarAspiranteGrupo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiciosGrupos/AsignarAspiranteGrupo" message="tns:IServiciosGrupos_AsignarAspiranteGrupo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiciosGrupos/AsignarAspiranteGrupoResponse" message="tns:IServiciosGrupos_AsignarAspiranteGrupo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RemoverAspiranteGrupo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiciosGrupos/RemoverAspiranteGrupo" message="tns:IServiciosGrupos_RemoverAspiranteGrupo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiciosGrupos/RemoverAspiranteGrupoResponse" message="tns:IServiciosGrupos_RemoverAspiranteGrupo_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IServiciosGrupos" type="tns:IServiciosGrupos">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ListarGruposActivos">
+      <soap:operation soapAction="http://tempuri.org/IServiciosGrupos/ListarGruposActivos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GuardarGrupo">
+      <soap:operation soapAction="http://tempuri.org/IServiciosGrupos/GuardarGrupo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerGrupoPorId">
+      <soap:operation soapAction="http://tempuri.org/IServiciosGrupos/ObtenerGrupoPorId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActualizarGrupo">
+      <soap:operation soapAction="http://tempuri.org/IServiciosGrupos/ActualizarGrupo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerAspirantesGrupo">
+      <soap:operation soapAction="http://tempuri.org/IServiciosGrupos/ObtenerAspirantesGrupo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AsignarAspiranteGrupo">
+      <soap:operation soapAction="http://tempuri.org/IServiciosGrupos/AsignarAspiranteGrupo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemoverAspiranteGrupo">
+      <soap:operation soapAction="http://tempuri.org/IServiciosGrupos/RemoverAspiranteGrupo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServiciosGrupos">
+    <wsdl:port name="BasicHttpBinding_IServiciosGrupos" binding="tns:BasicHttpBinding_IServiciosGrupos">
+      <soap:address location="http://localhost:53722/ServiciosGrupos.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
